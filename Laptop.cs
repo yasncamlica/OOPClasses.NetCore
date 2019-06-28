@@ -1,13 +1,13 @@
 using System;
 
-    public interface Laptop
+    public abstract class Laptop
     {
 
-        void TurnOn();
+        public abstract void TurnOn();
 
-        void TurnOn(bool accessBIOS);
+        public abstract void TurnOn(bool accessBIOS);
 
-        void TurnOff();
+        public abstract void TurnOff();
 
-        bool TouchScreen {get;}
+        public abstract bool TouchScreen {get;}
     }

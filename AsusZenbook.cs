@@ -3,22 +3,15 @@ namespace OOPExample
 {
     public class AsusZenbook : Laptop
     {
-        public bool TouchScreen => true;
 
-        public void TurnOff()
-        {
-            Console.WriteLine("Turning off AsusZenbook");
-        }
-
-        public void TurnOn()
+        public override void TurnOn()
         {
             Console.WriteLine("Turning on AsusZenbook");
         }
 
-        public void TurnOn(bool accessBIOS)
+        public override void TurnOn(bool accessBIOS)
         {
-
-            if(accessBIOS)
+            if (accessBIOS)
             {
                 Console.WriteLine("Accessing BIOS on AsusZenbook");
             }
@@ -27,5 +20,15 @@ namespace OOPExample
                 Console.WriteLine("Not accessing BIOS on AsusZenbook");
             }
         }
+
+        public override void TurnOff()
+        {
+            Console.WriteLine("Turning off AsusZenbook");
+        }
+
+
+
+        public override bool TouchScreen => true;
+
     }
 }

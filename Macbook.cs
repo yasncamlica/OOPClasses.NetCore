@@ -2,19 +2,13 @@ using System;
 
 public class Macbook : Laptop
 {
-    public bool TouchScreen => false;
 
-    public void TurnOff()
-    {
-        Console.WriteLine("Turning off MacbookAir");
-    }
-
-    public void TurnOn()
+    public override void TurnOn()
     {
         Console.WriteLine("Turning on MacbookAir");
     }
 
-    public void TurnOn(bool accessBIOS)
+    public override void TurnOn(bool accessBIOS)
     {
         if (accessBIOS)
         {
@@ -25,4 +19,16 @@ public class Macbook : Laptop
             Console.WriteLine("Not accessing BIOS on Macbook");
         }
     }
+
+    public override void TurnOff()
+    {
+        Console.WriteLine("Turning off MacbookAir");
+    }
+
+
+
+
+    public override bool TouchScreen => false;
+
+    
 }
