@@ -1,34 +1,45 @@
 using System;
+using System.Threading;
 
 public class Macbook : Laptop
 {
 
+    int milliseconds = 2000;
+
     public override void TurnOn()
     {
+        this.BootROMLoaded();
+        Thread.Sleep(milliseconds);
+        this.BootROMRunning();
+        Thread.Sleep(milliseconds);
+        this.PowerOnSelfTest();
+        Thread.Sleep(milliseconds);
+        this.FindBoosterFile();
+        Thread.Sleep(milliseconds);
+        this.LoadKernel();
+        Thread.Sleep(milliseconds);
         Console.WriteLine("Turning on MacbookAir");
     }
 
-    public override void TurnOn(bool accessBIOS)
+    private void BootROMLoaded()
     {
-        if (accessBIOS)
-        {
-            Console.WriteLine("Accessing BIOS on Macbook");
-        }
-        else
-        {
-            Console.WriteLine("Not accessing BIOS on Macbook");
-        }
+        Console.WriteLine("BootROM loaded...");
     }
 
-    public override void TurnOff()
+    private void BootROMRunning()
     {
-        Console.WriteLine("Turning off MacbookAir");
+        Console.WriteLine("BootROM running...");
+    }
+
+    private void FindBoosterFile()
+    {
+        Console.WriteLine("Finding booter file...");
+    }
+
+    private void LoadKernel()
+    {
+        Console.WriteLine("Booter loads the Kernel...");
     }
 
 
-
-
-    public override bool TouchScreen => false;
-
-    
 }

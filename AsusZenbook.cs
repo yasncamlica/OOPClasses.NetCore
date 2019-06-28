@@ -1,34 +1,46 @@
 ﻿using System;
+using System.Threading;
+
 namespace OOPExample
 {
     public class AsusZenbook : Laptop
     {
+        int milliseconds = 2000;
 
         public override void TurnOn()
         {
+            base.PowerOnSelfTest();
+            Thread.Sleep(milliseconds);
+            this.BIOSROM();
+            Thread.Sleep(milliseconds);
+            this.BootLoader();
+            Thread.Sleep(milliseconds);
+            this.OsConfig();
+            Thread.Sleep(milliseconds);
+            this.Security();
+            Thread.Sleep(milliseconds);
             Console.WriteLine("Turning on AsusZenbook");
         }
 
-        public override void TurnOn(bool accessBIOS)
+        private void BIOSROM()
         {
-            if (accessBIOS)
-            {
-                Console.WriteLine("Accessing BIOS on AsusZenbook");
-            }
-            else
-            {
-                Console.WriteLine("Not accessing BIOS on AsusZenbook");
-            }
+            Console.WriteLine("BIOS ROM process...");
         }
 
-        public override void TurnOff()
+        private void BootLoader()
         {
-            Console.WriteLine("Turning off AsusZenbook");
+            Console.WriteLine("BootLoader phase is happening...");
         }
 
+        private void OsConfig()
+        {
+            Console.WriteLine("OS configuration phase is happening...");
+        }
 
-
-        public override bool TouchScreen => true;
+        private void Security()
+        {
+            Console.WriteLine("Security logon phase is happening...");
+        }
 
     }
 }

@@ -7,16 +7,11 @@ namespace OOPExample
     {
         static void Main(string[] args)
         {
+            Laptop asusZenbook = new AsusZenbook();
+            Laptop macbookAir = new Macbook();
 
-            
-            List<Laptop> laptops = new List<Laptop>() { new Macbook(), new AsusZenbook() };
-
-            foreach(var laptop in laptops)
-            {
-                laptop.TurnOn();
-                laptop.TurnOn(true);
-            }
-
+            asusZenbook.TurnOn();
+            macbookAir.TurnOn();
         }
     }
 
