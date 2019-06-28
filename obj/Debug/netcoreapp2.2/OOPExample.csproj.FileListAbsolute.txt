@@ -1,0 +1,11 @@
+/Users/OnurYilmaz/Desktop/OOPExample/bin/Debug/netcoreapp2.2/OOPExample.deps.json
+/Users/OnurYilmaz/Desktop/OOPExample/bin/Debug/netcoreapp2.2/OOPExample.runtimeconfig.json
+/Users/OnurYilmaz/Desktop/OOPExample/bin/Debug/netcoreapp2.2/OOPExample.runtimeconfig.dev.json
+/Users/OnurYilmaz/Desktop/OOPExample/bin/Debug/netcoreapp2.2/OOPExample.dll
+/Users/OnurYilmaz/Desktop/OOPExample/bin/Debug/netcoreapp2.2/OOPExample.pdb
+/Users/OnurYilmaz/Desktop/OOPExample/obj/Debug/netcoreapp2.2/OOPExample.csprojAssemblyReference.cache
+/Users/OnurYilmaz/Desktop/OOPExample/obj/Debug/netcoreapp2.2/OOPExample.csproj.CoreCompileInputs.cache
+/Users/OnurYilmaz/Desktop/OOPExample/obj/Debug/netcoreapp2.2/OOPExample.AssemblyInfoInputs.cache
+/Users/OnurYilmaz/Desktop/OOPExample/obj/Debug/netcoreapp2.2/OOPExample.AssemblyInfo.cs
+/Users/OnurYilmaz/Desktop/OOPExample/obj/Debug/netcoreapp2.2/OOPExample.dll
+/Users/OnurYilmaz/Desktop/OOPExample/obj/Debug/netcoreapp2.2/OOPExample.pdb
